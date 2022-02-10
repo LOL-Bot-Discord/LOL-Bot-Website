@@ -7,3 +7,116 @@
 body {
   background: var(--bkclr-ltr);
 }
+
+#section-hero {
+  background: var(--clr-main);
+  color: white;
+  height: 25vh;
+  display: grid;
+  align-items: center;
+  padding-left: 9.5vw;
+}
+#section-hero h2 {
+  font-size: 3.5rem;
+}
+#section-feedback {
+  display: grid;
+  place-items: center;
+  min-height: 64.5vh;
+}
+#section-feedback textarea {
+  resize: none;
+  width: 90%;
+}
+#section-feedback .container-feedback {
+  background: var(--bkclr-ltst);
+  padding: 3rem 5rem;
+  min-width: 40%;
+}
+#section-feedback .form-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 0.5rem;
+  align-items: flex-start;
+}
+#section-feedback .form-item label {
+  font-size: 1.5em;
+  margin-block: 1rem;
+}
+#section-feedback .form-item input[type="text"] {
+  width: 60%;
+  height: 30px;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+}
+#section-feedback .form-item input[type="range"] {
+  -webkit-appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 90%;
+}
+#section-feedback .form-item input[type="range"]::before {
+  content: "1";
+  position: absolute;
+  bottom: 17%;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+#section-feedback .form-item input[type="range"]::after {
+  content: "10";
+  position: absolute;
+  bottom: 17%;
+  right: 10%;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+#section-feedback
+  .form-item
+  input[type="range"]::-webkit-slider-runnable-track {
+  background: var(--clr-main);
+  border-radius: 10px;
+  height: 1rem;
+}
+#section-feedback .form-item input[type="range"]::-moz-range-track {
+  background: var(--clr-main);
+  border-radius: 10px;
+  height: 1rem;
+}
+#section-feedback .form-item input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: var(--bkclr-lte);
+  border: solid 2px rgb(133, 133, 133);
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 10px;
+  margin-top: -3.2px;
+}
+#section-feedback .form-item input[type="range"]::-moz-range-thumb {
+  background: var(--bkclr-lte);
+  border: solid 2px rgb(133, 133, 133);
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 10px;
+}
+#section-feedback .form-item input[type="range"]:focus {
+  outline: none;
+}
+#section-feedback .form-item input[type="range"]:focus::-webkit-slider-thumb {
+  background: rgb(179, 179, 179);
+  border: solid 2px rgb(133, 133, 133);
+}
+#section-feedback .form-item input[type="range"]:focus::-moz-range-thumb {
+  background: rgb(179, 179, 179);
+  border: solid 2px rgb(133, 133, 133);
+}
+#section-feedback .form-item textarea {
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  padding-top: 0.1rem;
+  height: 5rem;
+  overflow-y: scroll;
+}
+#section-feedback .form-item input[type="submit"] {
+  margin-top: 1.5rem;
+}
