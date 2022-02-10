@@ -1,0 +1,61 @@
+nav {
+  padding-inline: 5vw;
+  height: clamp(5.5rem, 11vh, 6rem);
+  background: var(--bkclr-ltst);
+  display: flex;
+  align-items: center;
+}
+nav .nav-bar {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+nav .nav-bar .nav-item {
+  margin-inline: clamp(0.5rem, 1.5vw, 0.9rem);
+  position: relative;
+}
+nav .nav-bar .nav-item:not(.nav-btn) a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  background: var(--clr-main);
+  transition: width 400ms;
+}
+nav .nav-bar .nav-item:not(.nav-btn):hover a:after {
+  width: 100%;
+}
+nav .nav-bar a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
+nav .nav-logo a {
+  font-size: 1.5rem;
+  color: var(--clr-main);
+  text-decoration: none;
+}
+nav .nav-bar .nav-item.nav-active a {
+}
+nav .nav-logo {
+  flex: 1;
+}
+nav button {
+}
+button.primary-btn {
+  background: var(--clr-main);
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+}
+button.secondary-btn {
+  border: solid 2px var(--clr-main);
+  font-size: 1.1rem;
+  padding: calc(0.7rem - 2px) calc(0.8rem - 2px);
+  cursor: pointer;
+  background-color: transparent;
+}

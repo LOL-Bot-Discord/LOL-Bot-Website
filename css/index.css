@@ -2,18 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--fnt-main);
 }
 body {
-  background: var(--bkclr-dkst);
+  background: var(--bkclr-ltr);
 }
 .cont {
-  height: 100vh;
+  height: calc(100vh - 15vh);
   width: 100vw;
   display: grid;
   place-items: center;
 }
 h1 {
   font-size: 4rem;
-  color: white;
-  font-family: var(--fnt-main);
+  color: black;
 }

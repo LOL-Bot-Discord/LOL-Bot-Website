@@ -1,4 +1,8 @@
 :root {
-  --bkclr-dkst: rgb(24, 24, 24);
+  --bkclr-dkst: rgb(37, 37, 37);
+  --bkclr-dkr: rgb(56, 56, 56);
+  --bkclr-ltst: hsl(0, 0%, 99%);
+  --bkclr-ltr: rgb(240, 240, 240);
   --fnt-main: "Poppins", Sans-Serif;
+  --clr-main: #0053a0;
 }
