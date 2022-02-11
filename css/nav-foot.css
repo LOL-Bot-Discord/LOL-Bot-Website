@@ -1,11 +1,13 @@
 nav {
-  padding-inline: 5vw;
   height: clamp(5.5rem, 11vh, 6rem);
   background: var(--bkclr-ltst);
   display: flex;
   align-items: center;
   position: relative;
   z-index: 5;
+  padding-inline: 5vw;
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.11);
 }
 nav .nav-bar {
   display: flex;
@@ -13,7 +15,7 @@ nav .nav-bar {
   align-items: center;
 }
 nav .nav-bar .nav-item {
-  margin-inline: clamp(0.5rem, 1.5vw, 0.9rem);
+  margin-left: clamp(1rem, 1.5vw, 1.5rem);
   position: relative;
 }
 nav .nav-bar .nav-item:not(.nav-btn) a:after {
@@ -95,7 +97,6 @@ nav button {
     transition: all 0.5s;
   }
   nav {
-    position: fixed;
     width: 100vw;
   }
   nav ul.nav-bar {
