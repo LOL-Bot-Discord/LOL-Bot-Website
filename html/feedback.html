@@ -28,11 +28,11 @@
         </li>
         <li class="nav-item nav-btn">
           <a href="https://discord.gg/nXmsgBMuXC"
-            ><button class="secondary-btn">Discord</button></a
+            ><div class="secondary-btn">Discord</div></a
           >
         </li>
         <li class="nav-item nav-btn">
-          <a href="#"><button class="primary-btn">Dashboard</button></a>
+          <a href="#"><div class="primary-btn">Dashboard</div></a>
         </li>
       </ul>
     </nav>
@@ -43,7 +43,11 @@
       <div class="container-feedback">
         <form action="">
           <div class="form-item">
-            <label for="feature">Feature</label>
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="Your email" required />
+          </div>
+          <div class="form-item">
+            <label for="feature">Feature:</label>
             <input
               id="feature"
               type="text"
@@ -52,7 +56,7 @@
             />
           </div>
           <div class="form-item">
-            <label for="suggestion">Suggestion</label>
+            <label for="suggestion">Suggestion:</label>
             <textarea
               id="suggestion"
               type="textarea"
@@ -62,8 +66,9 @@
             ></textarea>
           </div>
           <div class="form-item">
-            <label for="rating">Rating</label>
+            <label for="rating">Rating:</label>
             <input type="range" min="1" max="10" step="1" />
+            <div class="five">5</div>
           </div>
           <div class="form-item">
             <input type="Submit" class="primary-btn" value="Submit" />

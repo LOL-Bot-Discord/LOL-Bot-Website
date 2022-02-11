@@ -5,5 +5,6 @@
   --bkclr-ltr: hsl(0, 0%, 93%);
   --bkclr-lte: rgb(226, 226, 226);
   --fnt-main: "Poppins", Sans-Serif;
-  --clr-main: #0053a0;
+  --clr-main-n: #0053a0;
+  --clr-main-dk: #00305e;
 }

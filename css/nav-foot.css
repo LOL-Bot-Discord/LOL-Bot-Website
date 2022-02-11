@@ -25,7 +25,7 @@ nav .nav-bar .nav-item:not(.nav-btn) a:after {
   left: 0;
   bottom: 0;
   height: 3px;
-  background: var(--clr-main);
+  background: var(--clr-main-n);
   transition: width 400ms;
 }
 nav .nav-bar .nav-item:not(.nav-btn):hover a:after {
@@ -48,24 +48,9 @@ nav .nav-logo {
 }
 nav button {
 }
-.primary-btn {
-  background: var(--clr-main);
-  color: white;
-  font-size: 1.1rem;
-  border: none;
-  padding: 0.7rem 1rem;
-  cursor: pointer;
-}
-.secondary-btn {
-  border: solid 2px var(--clr-main);
-  font-size: 1.1rem;
-  padding: calc(0.7rem - 2px) calc(0.8rem - 2px);
-  cursor: pointer;
-  background-color: transparent;
-}
 
 .overlay {
-  position: absolute;
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.24);
   height: 100vh;
   width: 100vw;
@@ -130,4 +115,43 @@ nav button {
 .nav-lines.nav-lines-active .line:nth-child(3) {
   transform: rotate(45deg) translate(0px, -6px);
   margin-bottom: 0;
+}
+
+.primary-btn {
+  background: var(--clr-main-n);
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+}
+.primary-btn::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--clr-main-dk);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 250ms ease-in-out;
+}
+.primary-btn:hover::before,
+.primary-btn:focus::before {
+  transform: scaleX(1);
+}
+.secondary-btn {
+  border: solid 2px var(--clr-main-n);
+  font-size: 1.1rem;
+  padding: calc(0.7rem - 2px) calc(0.8rem - 2px);
+  cursor: pointer;
+  background-color: transparent;
+}
+.primary-btn:hover {
 }
