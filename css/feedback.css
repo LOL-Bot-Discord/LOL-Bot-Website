@@ -48,7 +48,7 @@ body {
   margin-block: 1rem;
 }
 #section-feedback .form-item input[type="text"] {
-  width: 60%;
+  width: 50%;
   height: 30px;
   font-size: 1rem;
   padding-left: 0.5rem;
