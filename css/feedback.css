@@ -6,6 +6,7 @@
 }
 body {
   background: var(--bkclr-ltr);
+  overflow-x: hidden;
 }
 
 #section-hero {
