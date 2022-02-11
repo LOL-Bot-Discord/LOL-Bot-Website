@@ -70,7 +70,7 @@ body {
   content: "10";
   position: absolute;
   bottom: 17%;
-  right: 10%;
+  right: 0;
   font-size: 1rem;
   opacity: 0.9;
 }
