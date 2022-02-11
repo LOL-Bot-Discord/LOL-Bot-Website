@@ -24,7 +24,7 @@ body {
 #section-feedback {
   display: grid;
   place-items: center;
-  min-height: 64.5vh;
+  min-height: 70vh;
   margin-block: 1rem;
   max-width: 100vw;
 }
@@ -50,7 +50,7 @@ body {
 }
 #section-feedback .form-item input[type="text"] {
   width: 50%;
-  height: 30px;
+  height: 50px;
   font-size: 1rem;
   padding-left: 0.5rem;
 }
