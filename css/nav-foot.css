@@ -36,19 +36,16 @@ nav .nav-bar a {
   text-decoration: none;
   color: black;
 }
-nav .nav-logo a {
-  font-size: 1.5rem;
-  color: var(--clr-main);
-  text-decoration: none;
-}
+
 nav .nav-bar .nav-item.nav-active a {
+}
+
+nav .nav-logo img {
+  width: 70px;
 }
 nav .nav-logo {
   flex: 1;
 }
-nav button {
-}
-
 .overlay {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.24);
@@ -151,7 +148,10 @@ nav button {
   font-size: 1.1rem;
   padding: calc(0.7rem - 2px) calc(0.8rem - 2px);
   cursor: pointer;
+  color: black;
+  text-decoration: none;
   background-color: transparent;
 }
-.primary-btn:hover {
+.nav-item.nav-btn a {
+  text-decoration: none;
 }
