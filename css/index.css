@@ -7,13 +7,3 @@
 body {
   background: var(--bkclr-ltr);
 }
-.cont {
-  height: calc(100vh - 15vh);
-  width: 100vw;
-  display: grid;
-  place-items: center;
-}
-h1 {
-  font-size: 4rem;
-  color: black;
-}
