@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/nav-foot.css" />
+    <link rel="stylesheet" href="../css/var.css" />
+    <link rel="stylesheet" href="./privacy.css" />
+
+    <script type="module" src="./privacy.js"></script>
+    <title>Privacy Policy | Lol Bot</title>
+  </head>
+  <div class="overlay"></div>
+  <body>
+    <nav>
+      <div class="nav-item nav-logo">
+        <img src="../img/lol_bot.png" alt="logo" />
+      </div>
+      <div class="nav-lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-bar">
+        <li class="nav-item"><a href="../index.html">Home</a></li>
+        <li class="nav-item"><a href="#">About Us</a></li>
+        <li class="nav-item nav-active">
+          <a href="../FeedbackPage/feedback.html">Feedback</a>
+        </li>
+        <li class="nav-item nav-btn">
+          <a href="https://discord.gg/nXmsgBMuXC"
+            ><button class="secondary-btn">Discord</button></a
+          >
+        </li>
+        <li class="nav-item nav-btn">
+          <a href="#"><button class="primary-btn">Invite Bot</button></a>
+        </li>
+      </ul>
+    </nav>
+    <section id="section-hero">
+      <h2>LOL Bot Privacy Policy</h2>
+    </section>
+    <section id="section-privacy">
+      <div class="container-privacy">
+        <div class="privacy-text">
+          User data is stored in a database when you use a lol bot command,
+          server data is stored when you use a lol bot command in that server.
+          This data can be cleared from the database with
+          <code>;removemydata</code> and <code>;removeserverdata</code> (server
+          data removal only available for server owner). By using a command your
+          message content data of using the command and any responses that the
+          command asks for is also read, but this is not stored (except for
+          counting, which can be removed with the server data removal command
+          and only the user id and number of the last sent message of the
+          counting channel is stored) Sniping data storage for the server is
+          opt-in with <code>;enablesnipe</code> and can be cleared with
+          <code>;disablesnipe</code>
+          (default for sniping is set to disabled)
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

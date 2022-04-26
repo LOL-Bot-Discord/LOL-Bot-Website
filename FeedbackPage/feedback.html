@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/nav-foot.css" />
+    <link rel="stylesheet" href="../css/var.css" />
+    <link rel="stylesheet" href="./feedback.css" />
+    <script type="module" src="./feedback.js"></script>
+    <title>LOL Bot</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <nav>
+      <div class="nav-item nav-logo">
+        <img src="../img/lol_bot.png" alt="logo" />
+      </div>
+
+      <div class="nav-lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-bar">
+        <li class="nav-item"><a href="../index.html">Home</a></li>
+        <li class="nav-item"><a href="#">About Us</a></li>
+        <li class="nav-item nav-active">
+          <a href="./feedback.html">Feedback</a>
+        </li>
+        <li class="nav-item nav-btn">
+          <a href="https://discord.gg/nXmsgBMuXC"
+            ><div class="secondary-btn">Discord</div></a
+          >
+        </li>
+        <li class="nav-item nav-btn">
+          <a href="#"><div class="primary-btn">Invite Bot</div></a>
+        </li>
+      </ul>
+    </nav>
+    <section id="section-hero">
+      <h2>Bot Feedback</h2>
+    </section>
+    <section id="section-feedback">
+      <div class="container-feedback">
+        <form action="">
+          <div class="form-item">
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="Your email" required />
+          </div>
+          <div class="form-item">
+            <label for="feature">Feature:</label>
+            <input
+              id="feature"
+              type="text"
+              placeholder="What feature needs to be changed"
+              required
+            />
+          </div>
+          <div class="form-item">
+            <label for="suggestion">Suggestion:</label>
+            <textarea
+              id="suggestion"
+              type="textarea"
+              placeholder="How you would change it"
+              resize="none"
+              required
+            ></textarea>
+          </div>
+          <div class="form-item">
+            <label for="rating">Rating:</label>
+            <input type="range" min="1" max="10" step="1" value="5" />
+            <div class="five">5</div>
+          </div>
+          <div class="form-item">
+            <input type="Submit" class="primary-btn" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
