@@ -5,5 +5,8 @@
   font-family: var(--fnt-main);
 }
 body {
-  background: var(--bkclr-ltr);
+  background: var(--bkclr-main-lst);
+}
+#section-header {
+  background: var(--bkclr-main-ltr);
 }
