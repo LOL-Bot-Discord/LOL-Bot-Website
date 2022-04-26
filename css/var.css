@@ -1,11 +1,15 @@
 :root {
   --bkclr-dkst: rgb(37, 37, 37);
   --bkclr-dkr: rgb(56, 56, 56);
+  --bkclr-dke: rgb(63, 63, 63);
   --bkclr-ltst: hsl(0, 0%, 99%);
   --bkclr-ltr: hsl(0, 0%, 93%);
   --bkclr-lte: rgb(226, 226, 226);
+  --bkclr-main-lte: #2e2e2e;
+  --bkclr-main-ltr: #303030;
+  --bkclr-main-lst: #3d3d3d;
   --fnt-main: "Poppins", Sans-Serif;
-  --clr-main-n: #0053a0;
+  --clr-main-n: #005baf;
   --clr-main-dk: #00305e;
 }
 .primary-btn {
@@ -13,7 +17,7 @@
   color: white;
   font-size: 1.1rem;
   border: none;
-  padding: 0.7rem 1rem;
+  padding: 0.7rem 1.5rem;
   cursor: pointer;
   z-index: 1;
   position: relative;
@@ -42,7 +46,7 @@
   font-size: 1.1rem;
   padding: calc(0.7rem - 2px) calc(0.8rem - 2px);
   cursor: pointer;
-  color: black;
+  color: inherit;
   text-decoration: none;
   background-color: transparent;
 }
